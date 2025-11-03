@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+  font-family: Arial;
+}
+
+p {
+  margin-top : 0;
+  margin-bottom: 12px;
+}
+
+.display {
+  color: White;
+  font-size: 45px;
+  margin-top: 15px;
+}
+
+.claculator-button {
+  color: white;
+  border-style: none;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.gray-button {
+  background-color: rgb(51, 51, 51);  
+}
+
+.orange-button {
+  background-color: orange;
+}
+
+.clear-button {
+  font-size: 17px;
+}

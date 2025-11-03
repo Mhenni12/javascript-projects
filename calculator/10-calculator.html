@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculator</title>
+    <link rel="stylesheet" href="./10-calculator.css" />
+  </head>
+  <body>
+    <p class="js-display display"></p>
+    <p>
+      <button
+        onclick="
+        updateCalculation('1');
+      "
+        class="claculator-button gray-button"
+      >
+        1
+      </button>
+
+      <button
+        onclick="
+        updateCalculation('2');
+      "
+        class="claculator-button gray-button"
+      >
+        2
+      </button>
+
+      <button
+        onclick="
+        updateCalculation('3');
+      "
+        class="claculator-button gray-button"
+      >
+        3
+      </button>
+
+      <button
+        onclick="
+        updateCalculation(' + ');
+      "
+        class="claculator-button orange-button"
+      >
+        +
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        updateCalculation('4');
+      "
+        class="claculator-button gray-button"
+      >
+        4
+      </button>
+
+      <button
+        onclick="
+        updateCalculation('5');
+      "
+        class="claculator-button gray-button"
+      >
+        5
+      </button>
+
+      <button
+        onclick="
+        updateCalculation('6');
+      "
+        class="claculator-button gray-button"
+      >
+        6
+      </button>
+
+      <button
+        onclick="
+        updateCalculation(' - ');
+      "
+        class="claculator-button orange-button"
+      >
+        -
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        updateCalculation('7');
+      "
+        class="claculator-button gray-button"
+      >
+        7
+      </button>
+
+      <button
+        onclick="
+        updateCalculation('8');
+      "
+        class="claculator-button gray-button"
+      >
+        8
+      </button>
+
+      <button
+        onclick="
+        updateCalculation('9');
+      "
+        class="claculator-button gray-button"
+      >
+        9
+      </button>
+
+      <button
+        onclick="
+        updateCalculation(' * ');
+      "
+        class="claculator-button orange-button"
+      >
+        *
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        updateCalculation('0');
+      "
+        class="claculator-button gray-button"
+      >
+        0
+      </button>
+
+      <button
+        onclick="
+        updateCalculation('.');
+      "
+        class="claculator-button gray-button"
+      >
+        .
+      </button>
+
+      <button
+        onclick="
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        calculation = eval(calculation);
+        displayCalculation();
+
+        // Remember to save the calculation here.
+        saveCalculation();
+      "
+        class="claculator-button gray-button"
+      >
+        =
+      </button>
+
+      <button
+        onclick="
+        updateCalculation(' / ');
+      "
+        class="claculator-button orange-button"
+      >
+        /
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        calculation = '';
+        displayCalculation();
+
+        // Remember to save the calculation here.
+        saveCalculation();
+      "
+        class="claculator-button gray-button clear-button"
+      >
+        Clear
+      </button>
+    </p>
+
+    <script src="./10-calculator.js"></script>
+  </body>
+</html>
